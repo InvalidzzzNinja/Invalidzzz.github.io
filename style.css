@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+  margin-top: -50px
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  margin-top: 0px
+}
+.logo{
+	width: 350px;
+	cursor: pointer;
+  margin-left: -40px;
+}
+.navbar ul li{
+	list-style: none;
+	dsiplay: inline-block;
+	margin: 10px 20px;
+	position: relative;
+	float: left;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: "";
+	height: 3px;
+	width: 0%;
+	background: magenta;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transition: 0.5s;
+}
+.navbar ul li:hover:after{
+	width:100%;
+}
+.logoMain{
+  margin-top: -175px;
+  margin-left: 0px;
+ text-align:center;
+}
+.epichoot{
+  margin-top: -50px;
+  height:250px;
+  width:250px;
+  border: 2px;
+  border-radius: 80px;
+}
+.text2{
+  margin-top: -100px;
+  font-family: sans-serif;
+  text-align: center;
+  color:#fff;
+  align-items: center;
+}
+.text{
+  color: magenta;
+  text-shadow: 0 0 10px #000000;
+  align-items: center;
+}
+.text4{
+  margin-top: -200px;
+  font-family: sans-serif;
+  text-align: center;
+  color:#fff;
+  font-size: 18px;
+  align-items: center;
+}
+.text3{
+  color: magenta;
+  text-shadow: 0 0 10px #000000;
+  font-size: 48px;
+  margin-top: -50px;
+  align-items: center;
+}
+button{
+	width: 200px;
+	padding: 15px 0;
+	text-align: center;
+  margin-top: -100px;
+	margin: auto;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid magenta;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+span{
+	background: magenta;
+	height: 100%;
+	width: 0%;
+	border-radius: 25px;
+	position:absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	transition:0.5s;
+}
+button:hover span{
+	width: 100%;
+}
+button:hover span{
+	border: none;
+}
